@@ -14,7 +14,8 @@ const characters = [
     role: 'Саппорт / ДПС',
     color: 'from-purple-500 to-violet-600',
     materials: ['Амакумо', 'Свет', 'Хандгарды'],
-    talents: 'Переходность → Тайна Мусо → Автоатака'
+    talents: 'Переходность → Тайна Мусо → Автоатака',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/3e136435-009e-4b69-a02a-804378adbfdb.jpg'
   },
   {
     id: 2,
@@ -24,7 +25,8 @@ const characters = [
     role: 'Главный ДПС',
     color: 'from-red-500 to-orange-600',
     materials: ['Пылающий агат', 'Жук-сокровище', 'Слизь'],
-    talents: 'Элем. навык → Взрыв → Автоатака'
+    talents: 'Элем. навык → Взрыв → Автоатака',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/d77b5281-2641-431b-8db8-50682721c820.jpg'
   },
   {
     id: 3,
@@ -34,7 +36,8 @@ const characters = [
     role: 'Саппорт',
     color: 'from-teal-500 to-cyan-600',
     materials: ['Магу Кэнки', 'Морской гриб', 'Казначей'],
-    talents: 'Взрыв → Элем. навык → Автоатака'
+    talents: 'Взрыв → Элем. навык → Автоатака',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/4d9f245a-7208-420e-b664-abbbd2c90e75.jpg'
   },
   {
     id: 4,
@@ -44,7 +47,8 @@ const characters = [
     role: 'Саппорт / ДПС',
     color: 'from-green-500 to-lime-600',
     materials: ['Квинтэссенция', 'Грибы', 'Гномы'],
-    talents: 'Элем. навык → Взрыв → Автоатака'
+    talents: 'Элем. навык → Взрыв → Автоатака',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/ac47f899-1fb1-4604-bfc4-03c1ed12adc3.jpg'
   },
   {
     id: 5,
@@ -54,7 +58,8 @@ const characters = [
     role: 'Главный ДПС',
     color: 'from-blue-400 to-cyan-500',
     materials: ['Вечная мерзлота', 'Сакура', 'Хандгарды'],
-    talents: 'Взрыв → Автоатака → Элем. навык'
+    talents: 'Взрыв → Автоатака → Элем. навык',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/83594bd7-1bd5-43ff-a232-d2f2df960f17.jpg'
   },
   {
     id: 6,
@@ -64,7 +69,8 @@ const characters = [
     role: 'Главный ДПС',
     color: 'from-red-400 to-pink-500',
     materials: ['Огненный агат', 'Сакура', 'Свитки'],
-    talents: 'Автоатака → Элем. навык → Взрыв'
+    talents: 'Автоатака → Элем. навык → Взрыв',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/b358d600-f6c7-4008-b4f4-e5119d8d9296.jpg'
   }
 ];
 
@@ -206,7 +212,15 @@ const Index = () => {
               className="group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl border-border/50 bg-card/80 backdrop-blur overflow-hidden animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`h-2 bg-gradient-to-r ${character.color}`}></div>
+              <div className="relative h-56 overflow-hidden">
+                <div className={`absolute inset-0 bg-gradient-to-br ${character.color} opacity-20`}></div>
+                <img 
+                  src={character.image} 
+                  alt={character.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${character.color}`}></div>
+              </div>
               
               <CardHeader>
                 <div className="flex items-start justify-between mb-3">
