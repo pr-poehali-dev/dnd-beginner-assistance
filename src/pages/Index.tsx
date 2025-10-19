@@ -32,7 +32,7 @@ const characters = [
     color: 'from-red-500 to-orange-600',
     materials: ['Пылающий агат', 'Жук-сокровище', 'Слизь'],
     talents: 'Элем. навык → Взрыв → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/d77b5281-2641-431b-8db8-50682721c820.jpg',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/0564617e-2288-4134-86f4-2ac63739b6ef.jpg',
     teams: [
       { name: 'Испарение', members: ['Ху Тао', 'Син Цю', 'Чжун Ли', 'Альбедо'] },
       { name: 'VV Испарение', members: ['Ху Тао', 'Син Цю', 'Кадзуха', 'Томá'] },
@@ -48,7 +48,7 @@ const characters = [
     color: 'from-teal-500 to-cyan-600',
     materials: ['Магу Кэнки', 'Морской гриб', 'Казначей'],
     talents: 'Взрыв → Элем. навык → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/4d9f245a-7208-420e-b664-abbbd2c90e75.jpg',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/01c9eae5-cdb0-4844-a268-146ac3936750.jpg',
     teams: [
       { name: 'Тазер', members: ['Кадзуха', 'Фишль', 'Бэй Доу', 'Кокоми'] },
       { name: 'Национальная', members: ['Кадзуха', 'Беннет', 'Сян Лин', 'Син Цю'] },
@@ -64,7 +64,7 @@ const characters = [
     color: 'from-green-500 to-lime-600',
     materials: ['Квинтэссенция', 'Грибы', 'Гномы'],
     talents: 'Элем. навык → Взрыв → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/ac47f899-1fb1-4604-bfc4-03c1ed12adc3.jpg',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/9bea46eb-53bc-4c2d-9fb2-3f3cea40244d.jpg',
     teams: [
       { name: 'Гипер Блум', members: ['Нахида', 'Райдэн', 'Син Цю', 'Кукки Синобу'] },
       { name: 'Бёрджион', members: ['Нахида', 'Сян Лин', 'Беннет', 'Кадзуха'] },
@@ -80,7 +80,7 @@ const characters = [
     color: 'from-blue-400 to-cyan-500',
     materials: ['Вечная мерзлота', 'Сакура', 'Хандгарды'],
     talents: 'Взрыв → Автоатака → Элем. навык',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/83594bd7-1bd5-43ff-a232-d2f2df960f17.jpg',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/24ef3602-bc4f-4fb7-8ae7-7eed8265d525.jpg',
     teams: [
       { name: 'Заморозка', members: ['Аяка', 'Мона', 'Кадзуха', 'Диона'] },
       { name: 'Сун Ю', members: ['Аяка', 'Сун Ю', 'Сян Юнь', 'Фурина'] },
@@ -160,7 +160,7 @@ const characters = [
     color: 'from-cyan-500 to-teal-600',
     materials: ['Анемо куб', 'Цин синь', 'Слизь'],
     talents: 'Автоатака → Элем. навык → Взрыв',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/4d9f245a-7208-420e-b664-abbbd2c90e75.jpg',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/16e9f695-45f7-406e-93e6-021b4a3e56d5.jpg',
     teams: [
       { name: 'Гипер Сяо', members: ['Сяо', 'Беннет', 'Чжун Ли', 'Альбедо'] },
       { name: 'Двойной Гео', members: ['Сяо', 'Чжун Ли', 'Альбедо', 'Беннет'] },
@@ -176,7 +176,7 @@ const characters = [
     color: 'from-blue-500 to-cyan-600',
     materials: ['Фонтейн', 'Люмисцент', 'Сердце'],
     talents: 'Элем. навык → Взрыв → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/d77b5281-2641-431b-8db8-50682721c820.jpg',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/0fcf3f23-2dfb-4fa2-bffe-216fdf225618.jpg',
     teams: [
       { name: 'Пневмусия', members: ['Фурина', 'Нёвиллет', 'Кадзуха', 'Барбелот'] },
       { name: 'Фриз нового поколения', members: ['Фурина', 'Аяка', 'Сун Ю', 'Шарлотта'] },
@@ -192,7 +192,7 @@ const characters = [
     color: 'from-indigo-500 to-blue-600',
     materials: ['Фонтейн', 'Роман', 'Транспаренсия'],
     talents: 'Автоатака → Элем. навык → Взрыв',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/3e136435-009e-4b69-a02a-804378adbfdb.jpg',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/8a99f0b3-caf6-4612-a58b-eb799dd3c863.jpg',
     teams: [
       { name: 'Гипер Нёвиллет', members: ['Нёвиллет', 'Фурина', 'Кадзуха', 'Барбелот'] },
       { name: 'Испарение', members: ['Нёвиллет', 'Фурина', 'Беннет', 'Сян Лин'] },
