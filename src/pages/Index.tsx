@@ -15,7 +15,12 @@ const characters = [
     color: 'from-purple-500 to-violet-600',
     materials: ['Амакумо', 'Свет', 'Хандгарды'],
     talents: 'Переходность → Тайна Мусо → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/3e136435-009e-4b69-a02a-804378adbfdb.jpg'
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/3e136435-009e-4b69-a02a-804378adbfdb.jpg',
+    teams: [
+      { name: 'Национальная команда', members: ['Райдэн', 'Беннет', 'Сян Лин', 'Син Цю'] },
+      { name: 'Гипер Райдэн', members: ['Райдэн', 'Кадзуха', 'Беннет', 'Сара'] },
+      { name: 'Овервейп', members: ['Райдэн', 'Беннет', 'Син Цю', 'Сян Лин'] }
+    ]
   },
   {
     id: 2,
@@ -26,7 +31,12 @@ const characters = [
     color: 'from-red-500 to-orange-600',
     materials: ['Пылающий агат', 'Жук-сокровище', 'Слизь'],
     talents: 'Элем. навык → Взрыв → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/d77b5281-2641-431b-8db8-50682721c820.jpg'
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/d77b5281-2641-431b-8db8-50682721c820.jpg',
+    teams: [
+      { name: 'Испарение', members: ['Ху Тао', 'Син Цю', 'Чжун Ли', 'Альбедо'] },
+      { name: 'VV Испарение', members: ['Ху Тао', 'Син Цю', 'Кадзуха', 'Томá'] },
+      { name: 'Мельт', members: ['Ху Тао', 'Розария', 'Кэйа', 'Диона'] }
+    ]
   },
   {
     id: 3,
@@ -37,7 +47,12 @@ const characters = [
     color: 'from-teal-500 to-cyan-600',
     materials: ['Магу Кэнки', 'Морской гриб', 'Казначей'],
     talents: 'Взрыв → Элем. навык → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/4d9f245a-7208-420e-b664-abbbd2c90e75.jpg'
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/4d9f245a-7208-420e-b664-abbbd2c90e75.jpg',
+    teams: [
+      { name: 'Тазер', members: ['Кадзуха', 'Фишль', 'Бэй Доу', 'Кокоми'] },
+      { name: 'Национальная', members: ['Кадзуха', 'Беннет', 'Сян Лин', 'Син Цю'] },
+      { name: 'Фриз', members: ['Кадзуха', 'Аяка', 'Мона', 'Диона'] }
+    ]
   },
   {
     id: 4,
@@ -48,7 +63,12 @@ const characters = [
     color: 'from-green-500 to-lime-600',
     materials: ['Квинтэссенция', 'Грибы', 'Гномы'],
     talents: 'Элем. навык → Взрыв → Автоатака',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/ac47f899-1fb1-4604-bfc4-03c1ed12adc3.jpg'
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/ac47f899-1fb1-4604-bfc4-03c1ed12adc3.jpg',
+    teams: [
+      { name: 'Гипер Блум', members: ['Нахида', 'Райдэн', 'Син Цю', 'Кукки Синобу'] },
+      { name: 'Бёрджион', members: ['Нахида', 'Сян Лин', 'Беннет', 'Кадзуха'] },
+      { name: 'Агграва', members: ['Нахида', 'Фишль', 'Кадзуха', 'Яо Яо'] }
+    ]
   },
   {
     id: 5,
@@ -59,7 +79,12 @@ const characters = [
     color: 'from-blue-400 to-cyan-500',
     materials: ['Вечная мерзлота', 'Сакура', 'Хандгарды'],
     talents: 'Взрыв → Автоатака → Элем. навык',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/83594bd7-1bd5-43ff-a232-d2f2df960f17.jpg'
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/83594bd7-1bd5-43ff-a232-d2f2df960f17.jpg',
+    teams: [
+      { name: 'Заморозка', members: ['Аяка', 'Мона', 'Кадзуха', 'Диона'] },
+      { name: 'Сун Ю', members: ['Аяка', 'Сун Ю', 'Сян Юнь', 'Фурина'] },
+      { name: 'Вечная Заморозка', members: ['Аяка', 'Кокоми', 'Казуха', 'Сёнхе'] }
+    ]
   },
   {
     id: 6,
@@ -70,7 +95,12 @@ const characters = [
     color: 'from-red-400 to-pink-500',
     materials: ['Огненный агат', 'Сакура', 'Свитки'],
     talents: 'Автоатака → Элем. навык → Взрыв',
-    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/b358d600-f6c7-4008-b4f4-e5119d8d9296.jpg'
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/b358d600-f6c7-4008-b4f4-e5119d8d9296.jpg',
+    teams: [
+      { name: 'Перегрузка', members: ['Еимия', 'Фишль', 'Бэй Доу', 'Беннет'] },
+      { name: 'Испарение', members: ['Еимия', 'Син Цю', 'Беннет', 'Кадзуха'] },
+      { name: 'Мельт', members: ['Еимия', 'Розария', 'Диона', 'Беннет'] }
+    ]
   }
 ];
 
@@ -254,6 +284,21 @@ const Index = () => {
                   <div>
                     <p className="text-xs text-muted-foreground font-roboto mb-1">Приоритет талантов:</p>
                     <p className="text-sm font-roboto">{character.talents}</p>
+                  </div>
+
+                  <div className="mt-4 pt-4 border-t border-border/50">
+                    <p className="text-xs text-muted-foreground font-roboto mb-2 flex items-center gap-1">
+                      <Icon name="Users" size={14} />
+                      Лучшие отряды:
+                    </p>
+                    <div className="space-y-2">
+                      {character.teams.slice(0, 2).map((team, idx) => (
+                        <div key={idx} className="text-xs bg-muted/30 rounded-md p-2">
+                          <p className="font-semibold text-primary mb-1">{team.name}</p>
+                          <p className="text-muted-foreground font-roboto">{team.members.join(' • ')}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
                   <Button 
