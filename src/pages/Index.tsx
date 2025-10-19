@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
 
@@ -101,6 +102,102 @@ const characters = [
       { name: 'Испарение', members: ['Еимия', 'Син Цю', 'Беннет', 'Кадзуха'] },
       { name: 'Мельт', members: ['Еимия', 'Розария', 'Диона', 'Беннет'] }
     ]
+  },
+  {
+    id: 7,
+    name: 'Чжун Ли',
+    element: 'Гео',
+    rarity: 5,
+    role: 'Саппорт',
+    color: 'from-yellow-600 to-amber-700',
+    materials: ['Базальтовая колонна', 'Кор ляпис', 'Слизь'],
+    talents: 'Элем. навык → Взрыв → Автоатака',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/fc8b7530-7571-41e5-8b2c-c27c32dfd93e.jpg',
+    teams: [
+      { name: 'Гео резонанс', members: ['Чжун Ли', 'Ху Тао', 'Син Цю', 'Альбедо'] },
+      { name: 'Мельт Гань Юй', members: ['Чжун Ли', 'Гань Юй', 'Сян Лин', 'Беннет'] },
+      { name: 'Универсал', members: ['Чжун Ли', 'Райдэн', 'Кадзуха', 'Беннет'] }
+    ]
+  },
+  {
+    id: 8,
+    name: 'Гань Юй',
+    element: 'Крио',
+    rarity: 5,
+    role: 'Главный ДПС',
+    color: 'from-blue-300 to-indigo-400',
+    materials: ['Цинь', 'Цин синь', 'Слизь'],
+    talents: 'Автоатака → Взрыв → Элем. навык',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/7037487c-3127-46b2-b810-0618f726075b.jpg',
+    teams: [
+      { name: 'Мельт', members: ['Гань Юй', 'Беннет', 'Сян Лин', 'Чжун Ли'] },
+      { name: 'Фриз', members: ['Гань Юй', 'Мона', 'Вэнти', 'Диона'] },
+      { name: 'Моно Крио', members: ['Гань Юй', 'Сёнхе', 'Казуха', 'Кокоми'] }
+    ]
+  },
+  {
+    id: 9,
+    name: 'Вэнти',
+    element: 'Анемо',
+    rarity: 5,
+    role: 'Саппорт',
+    color: 'from-teal-400 to-emerald-500',
+    materials: ['Буря', 'Цецилия', 'Слизь'],
+    talents: 'Взрыв → Элем. навык → Автоатака',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/22f56bf3-c606-4a76-9e43-8455d0a3a84f.jpg',
+    teams: [
+      { name: 'Фриз Моргана', members: ['Вэнти', 'Гань Юй', 'Мона', 'Диона'] },
+      { name: 'Тазер', members: ['Вэнти', 'Фишль', 'Бэй Доу', 'Барбара'] },
+      { name: 'Анемо Батарея', members: ['Вэнти', 'Сяо', 'Беннет', 'Чжун Ли'] }
+    ]
+  },
+  {
+    id: 10,
+    name: 'Сяо',
+    element: 'Анемо',
+    rarity: 5,
+    role: 'Главный ДПС',
+    color: 'from-cyan-500 to-teal-600',
+    materials: ['Анемо куб', 'Цин синь', 'Слизь'],
+    talents: 'Автоатака → Элем. навык → Взрыв',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/4d9f245a-7208-420e-b664-abbbd2c90e75.jpg',
+    teams: [
+      { name: 'Гипер Сяо', members: ['Сяо', 'Беннет', 'Чжун Ли', 'Альбедо'] },
+      { name: 'Двойной Гео', members: ['Сяо', 'Чжун Ли', 'Альбедо', 'Беннет'] },
+      { name: 'Анемо резонанс', members: ['Сяо', 'Джинн', 'Чжун Ли', 'Беннет'] }
+    ]
+  },
+  {
+    id: 11,
+    name: 'Фурина',
+    element: 'Гидро',
+    rarity: 5,
+    role: 'Саппорт / ДПС',
+    color: 'from-blue-500 to-cyan-600',
+    materials: ['Фонтейн', 'Люмисцент', 'Сердце'],
+    talents: 'Элем. навык → Взрыв → Автоатака',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/d77b5281-2641-431b-8db8-50682721c820.jpg',
+    teams: [
+      { name: 'Пневмусия', members: ['Фурина', 'Нёвиллет', 'Кадзуха', 'Барбелот'] },
+      { name: 'Фриз нового поколения', members: ['Фурина', 'Аяка', 'Сун Ю', 'Шарлотта'] },
+      { name: 'Гипер Блум', members: ['Фурина', 'Нахида', 'Райдэн', 'Барбелот'] }
+    ]
+  },
+  {
+    id: 12,
+    name: 'Нёвиллет',
+    element: 'Гидро',
+    rarity: 5,
+    role: 'Главный ДПС',
+    color: 'from-indigo-500 to-blue-600',
+    materials: ['Фонтейн', 'Роман', 'Транспаренсия'],
+    talents: 'Автоатака → Элем. навык → Взрыв',
+    image: 'https://cdn.poehali.dev/projects/a03e1018-a1b8-4dd0-ae61-a7d56755e339/files/3e136435-009e-4b69-a02a-804378adbfdb.jpg',
+    teams: [
+      { name: 'Гипер Нёвиллет', members: ['Нёвиллет', 'Фурина', 'Кадзуха', 'Барбелот'] },
+      { name: 'Испарение', members: ['Нёвиллет', 'Фурина', 'Беннет', 'Сян Лин'] },
+      { name: 'Монстат', members: ['Нёвиллет', 'Фурина', 'Чжун Ли', 'Барбелот'] }
+    ]
   }
 ];
 
@@ -158,6 +255,7 @@ const levelingGuide = [
 
 const Index = () => {
   const [selectedElement, setSelectedElement] = useState<string>('Все');
+  const [selectedCharacter, setSelectedCharacter] = useState<typeof characters[0] | null>(null);
 
   const elements = ['Все', 'Пиро', 'Гидро', 'Электро', 'Крио', 'Анемо', 'Гео', 'Дендро'];
   const elementColors: Record<string, string> = {
@@ -302,6 +400,7 @@ const Index = () => {
                   </div>
 
                   <Button 
+                    onClick={() => setSelectedCharacter(character)}
                     className={`w-full mt-4 bg-gradient-to-r ${character.color} hover:opacity-90 font-poppins`}
                   >
                     <Icon name="BookOpen" size={16} className="mr-2" />
@@ -426,6 +525,141 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      <Dialog open={!!selectedCharacter} onOpenChange={(open) => !open && setSelectedCharacter(null)}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          {selectedCharacter && (
+            <>
+              <DialogHeader>
+                <div className={`h-2 bg-gradient-to-r ${selectedCharacter.color} -mx-6 -mt-6 mb-4`}></div>
+                <div className="flex items-start gap-6">
+                  <div className="relative w-48 h-48 rounded-lg overflow-hidden flex-shrink-0">
+                    <div className={`absolute inset-0 bg-gradient-to-br ${selectedCharacter.color} opacity-20`}></div>
+                    <img 
+                      src={selectedCharacter.image} 
+                      alt={selectedCharacter.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-2">
+                      <DialogTitle className="text-3xl font-poppins">{selectedCharacter.name}</DialogTitle>
+                      <Badge className={`bg-gradient-to-r ${selectedCharacter.color} text-white border-0`}>
+                        {selectedCharacter.element}
+                      </Badge>
+                    </div>
+                    <DialogDescription className="text-base mb-3">
+                      {selectedCharacter.role} • {selectedCharacter.rarity}★
+                    </DialogDescription>
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(selectedCharacter.rarity)].map((_, i) => (
+                        <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </DialogHeader>
+
+              <div className="space-y-6 mt-6">
+                <div>
+                  <h3 className="text-xl font-poppins font-bold mb-3 flex items-center gap-2">
+                    <Icon name="Sword" size={20} className="text-primary" />
+                    Приоритет прокачки талантов
+                  </h3>
+                  <p className="text-base bg-muted/50 p-4 rounded-lg font-roboto">{selectedCharacter.talents}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-poppins font-bold mb-3 flex items-center gap-2">
+                    <Icon name="Package" size={20} className="text-primary" />
+                    Необходимые материалы
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedCharacter.materials.map((material, idx) => (
+                      <Badge key={idx} variant="outline" className="text-sm py-2 px-4">
+                        {material}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-poppins font-bold mb-3 flex items-center gap-2">
+                    <Icon name="Users" size={20} className="text-primary" />
+                    Лучшие команды
+                  </h3>
+                  <div className="space-y-3">
+                    {selectedCharacter.teams.map((team, idx) => (
+                      <div key={idx} className="bg-muted/50 rounded-lg p-4 border border-border/50">
+                        <h4 className="font-poppins font-semibold text-lg mb-2 text-primary">{team.name}</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {team.members.map((member, memberIdx) => (
+                            <Badge 
+                              key={memberIdx} 
+                              className="bg-gradient-to-r from-primary/20 to-secondary/20 text-foreground border-primary/30"
+                            >
+                              {member}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-poppins font-bold mb-3 flex items-center gap-2">
+                    <Icon name="TrendingUp" size={20} className="text-primary" />
+                    Рекомендации по билду
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-muted/50 rounded-lg p-4">
+                      <h4 className="font-poppins font-semibold mb-2 flex items-center gap-2">
+                        <Icon name="Shield" size={16} />
+                        Артефакты
+                      </h4>
+                      <p className="text-sm text-muted-foreground font-roboto">
+                        {selectedCharacter.role.includes('ДПС') 
+                          ? '4х Набор урона элемента / 2х АТК + 2х Элемент'
+                          : '4х Церемония / 4х Изумрудная тень'}
+                      </p>
+                    </div>
+                    <div className="bg-muted/50 rounded-lg p-4">
+                      <h4 className="font-poppins font-semibold mb-2 flex items-center gap-2">
+                        <Icon name="Zap" size={16} />
+                        Оружие
+                      </h4>
+                      <p className="text-sm text-muted-foreground font-roboto">
+                        Сигнатурное оружие / 5★ универсальное
+                      </p>
+                    </div>
+                    <div className="bg-muted/50 rounded-lg p-4">
+                      <h4 className="font-poppins font-semibold mb-2 flex items-center gap-2">
+                        <Icon name="Target" size={16} />
+                        Основные статы
+                      </h4>
+                      <p className="text-sm text-muted-foreground font-roboto">
+                        {selectedCharacter.role.includes('ДПС') 
+                          ? 'АТК% / Крит урон / Крит шанс'
+                          : 'ЭМ / Восст. энергии / ЭМ'}
+                      </p>
+                    </div>
+                    <div className="bg-muted/50 rounded-lg p-4">
+                      <h4 className="font-poppins font-semibold mb-2 flex items-center gap-2">
+                        <Icon name="Star" size={16} />
+                        Созвездия
+                      </h4>
+                      <p className="text-sm text-muted-foreground font-roboto">
+                        C0 достаточно / C1-C2 значительное улучшение
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
 
       <footer className="border-t border-border/50 py-8 mt-16 bg-card/20 backdrop-blur">
         <div className="container mx-auto px-4 text-center">
