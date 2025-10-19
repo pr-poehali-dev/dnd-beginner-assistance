@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 220 30% 8%;
-    --foreground: 40 60% 90%;
+    --background: 240 20% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 220 25% 12%;
-    --card-foreground: 40 60% 90%;
+    --card: 240 15% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 220 30% 10%;
-    --popover-foreground: 40 60% 90%;
+    --popover: 240 20% 10%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 262 52% 47%;
-    --primary-foreground: 40 70% 95%;
+    --primary: 275 70% 60%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 35 50% 70%;
-    --secondary-foreground: 220 30% 10%;
+    --secondary: 190 80% 50%;
+    --secondary-foreground: 240 20% 10%;
 
-    --muted: 220 20% 20%;
-    --muted-foreground: 40 30% 70%;
+    --muted: 240 10% 20%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 0 65% 55%;
-    --accent-foreground: 40 70% 95%;
+    --accent: 45 100% 60%;
+    --accent-foreground: 240 20% 10%;
 
     --destructive: 0 65% 55%;
-    --destructive-foreground: 40 70% 95%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 25%;
-    --input: 220 20% 20%;
-    --ring: 262 52% 47%;
+    --border: 240 10% 25%;
+    --input: 240 10% 20%;
+    --ring: 275 70% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 220 30% 10%;
-    --sidebar-foreground: 40 60% 90%;
-    --sidebar-primary: 262 52% 47%;
-    --sidebar-primary-foreground: 40 70% 95%;
-    --sidebar-accent: 220 25% 15%;
-    --sidebar-accent-foreground: 40 60% 90%;
-    --sidebar-border: 220 20% 25%;
-    --sidebar-ring: 262 52% 47%;
+    --sidebar-background: 240 20% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 275 70% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 240 15% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 240 10% 25%;
+    --sidebar-ring: 275 70% 60%;
   }
 }
 
@@ -54,7 +54,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Merriweather", serif;
+    font-family: "Roboto", sans-serif;
   }
 
   h1,
@@ -63,6 +63,6 @@
   h4,
   h5,
   h6 {
-    font-family: "Cinzel", serif;
+    font-family: "Poppins", sans-serif;
   }
 }

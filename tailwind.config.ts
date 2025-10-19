@@ -64,8 +64,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				cinzel: ['Cinzel', 'serif'],
-				merriweather: ['Merriweather', 'serif']
+				poppins: ['Poppins', 'sans-serif'],
+				roboto: ['Roboto', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
